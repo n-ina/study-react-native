@@ -35,10 +35,10 @@ export default class App extends React.Component {
       return (
         <AppLoading
           // 非同期でリソースをロードします
-          startAsync = { this.loadResourcesAshync }
-          onError = { error => console.warn(error) }
+          startAsync={this.loadResourcesAshync}
+          onError={error => console.warn(error)}
           // リソースのロードが終わったらロードを終了します
-          onFinish = { () => this.setState({ isLoadingComplete: true })}
+          onFinish={() => this.setState({ isLoadingComplete: true })}
         />
       );
     }
@@ -50,4 +50,3 @@ export default class App extends React.Component {
     );
   }
 }
-
